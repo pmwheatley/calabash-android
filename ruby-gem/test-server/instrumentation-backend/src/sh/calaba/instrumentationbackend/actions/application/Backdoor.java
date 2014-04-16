@@ -36,7 +36,7 @@ public class Backdoor implements Action {
 			backdoorResult = (String)op.apply(app);
 		} catch (Exception e) {
 			e.printStackTrace();
-			return Result.failedResult("No such backdoor method found: " + op.getName() + "Exception: " + e.getMessage());
+			return Result.failedResult("No such backdoor method found: public String " + op.getName() + "(String arg)");
 		}
 
 		// set backdoor result as bonus
